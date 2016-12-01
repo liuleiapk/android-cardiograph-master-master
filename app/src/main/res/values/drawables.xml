@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="blue_button_nor">@color/blue_button_nor</drawable>
+    <drawable name="white">@color/white</drawable>
+    
+    <drawable name="gray_bg">@color/gray</drawable>
+    <drawable name="blue_bg">@color/blue4</drawable>
+    <drawable name="gray_setting">@color/gray_main2</drawable>
+    <drawable name="deepgray_bg">@color/deepgray</drawable>
+</resources>

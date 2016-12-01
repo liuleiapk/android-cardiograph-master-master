@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 组合左边TextView，中间EditText，右边TextView 的布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    style="@style/combination_item_style"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/id_combinatiion_text_edit_text_01"
+        style="@style/shoudan_text_medium_black"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/id_combination_text_edit_edit"
+        style="@style/edit_text_style_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:gravity="right"
+        android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/id_combinatiion_text_edit_text_02"
+            style="@style/shoudan_text_medium_black"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="#0000FF" />
+
+    </RelativeLayout>
+
+</LinearLayout>

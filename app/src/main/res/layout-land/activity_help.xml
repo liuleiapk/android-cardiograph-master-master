@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llHelp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background_land">
+<!--     <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/help"/> -->
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:text="操作指南"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"/>   
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="手动：当使用其他仪器时，手动输入测试的心率。\n\n自动：使用本仪器时，自动输入测试的心率。"
+        android:textColor="#000000"
+        android:textSize="20sp" 
+        android:layout_marginTop="30dp"/>
+     <!-- <com.cardiograph.view.WaveSurfaceView
+         android:layout_width="match_parent"
+         android:layout_height="100dp"
+         /> -->
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.cardiograph"
+    android:id="@+id/id_navigation_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <!--修改返回键 Selector 修改背景 删除底部端背景 by more -->
+
+    <com.cardiograph.component.NavigationBar
+        android:id="@+id/id_navigation_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:backBg="@drawable/shoudan_top_back_normal_selector"
+        app:navBg="@drawable/nav_bar"
+        app:titleMaxLength="12"
+        app:titleTextSize="@dimen/big_text_size" />
+
+</LinearLayout>

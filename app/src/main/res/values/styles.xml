@@ -1,0 +1,588 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- AlertDialog text color fix thanks to Shawn Castrianni, see: http://groups.google.com/group/android-developers/browse_thread/thread/f0b34621d3a70c4b -->
+    <style name="DialogLight" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/whitegrey</item>
+    	<item name="android:textColor">@color/black</item>
+    </style>
+    
+    <!-- 閫氱敤缁熶竴榛戣壊瀛椾綋 -->
+    <style name="shoudan_text_small_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+    <!-- 鏅�氬瓧浣� -->
+
+    <style name="text_style_normal">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <!-- 鏅�氬瓧浣�,鐧借壊 -->
+    <style name="text_style_normal_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <!-- 缁熶竴姗欒壊瀛椾綋 -->
+    <style name="shoudan_text_medium_orange">
+        <item name="android:textColor">@color/orange2</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <style name="shoudan_text_big_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/big_text_size</item>
+    </style>
+
+    <!-- 甯哥敤鍒嗗壊绾� -->
+    <style name="seperator">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@drawable/u11_line</item>
+    </style>
+    <!-- 绮椾綋锛屽壇鏍囬绛� -->
+
+    <style name="text_style_large_bold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="common_background">
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="app_bg">
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="shoudan_text_medium_black">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+    <!-- 缁勫悎椤圭殑楂樺害 -->
+    <style name="combination_item_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <style name="btn_top_line">
+        <item name="@attr/view_bg">@drawable/btn_topline_selector</item>
+        <item name="@attr/btn_text_color">@color/btn_with_topline_text_selector</item>
+        <item name="@attr/line_color">@color/blue4</item>
+        <item name="@attr/btn_text_size">20</item>
+    </style>
+
+    <style name="buttondialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:width">100dp</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:background">@drawable/selector_dialog_btn</item>
+    </style>
+
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- <item name="android:windowContentOverlay">@null</item> -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 妯＄硦 -->
+    </style>
+
+    <style name="shoudan_text_white_large_bold">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="shoudan_text_big_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="shoudan_common_btn_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:background">@drawable/shoudan_common_button_selector</item>
+    </style>
+
+    <style name="my_radio_button" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/fee_selector</item>
+    </style>
+
+    <style name="Theme.AppStartLoadTranslucent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="remittance_open_item_row">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="remittance_open_item_tv">
+        <item name="android:layout_gravity">center_vertical|left</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="remittance_open_item_edit">
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="remittance_open_item_img_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:src">@drawable/right_arrow</item>
+    </style>
+
+    <style name="mycheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_selector</item>
+    </style>
+
+    <style name="customcheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_selector</item>
+        <item name="android:paddingLeft">2dip</item>
+    </style>
+
+    <style name="detail_left">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+    </style>
+
+    <style name="detail_right">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">8</item>
+    </style>
+
+    <style name="detail_bg">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- EditText 鏍峰紡 -->
+    <style name="edit_text_style_normal">
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:numeric">integer</item>
+    </style>
+
+    <style name="detail_background">
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <!-- 鏍囬鏂囧瓧鏍峰紡 -->
+
+    <style name="text_style_large_bold_title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 绮椾綋锛屽壇鏍囬绛� -->
+
+    <!-- 渚垮埄鐗规儬锛屽壇鏍囬绛� -->
+    <style name="text_bianlitehui_style_large">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <!-- 绮椾綋锛屽皬鏍囬绛� -->
+
+    <style name="text_style_small_bold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 绮椾綋锛岄潪甯稿皬鏍囬绛� -->
+
+    <style name="text_style_very_small_bold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 绮椾綋锛岄潪甯稿皬鏍囬绛� -->
+
+    <style name="text_style_min_bold">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 鏅�氬瓧浣� -->
+
+
+    <style name="text_style_fourteen_normal">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <!-- 鏅�氱伆鑹插瓧浣� -->
+
+    <style name="text_style_gary">
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <!-- 鏅�氳摑鑹插瓧浣� -->
+
+    <style name="text_style_normal_blue">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">16.0sp</item>
+    </style>
+
+    <!-- 鏅�氬ぇ瀛椾綋 -->
+
+    <style name="text_style_normal_big">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20.0sp</item>
+    </style>
+
+    <!-- 鏅�氬瓧浣�,鐧借壊 -->
+    <style name="text_style_btn_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
+    <!-- 鏅�氬瓧浣�,鐧借壊 ,绮椾綋-->
+    <style name="text_style_normal_white_bold">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 灏忓彿瀛椾綋锛岄粦鑹� -->
+    <style name="text_style_small_darkgray">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13.0sp</item>
+    </style>
+
+    <!-- 灏忓彿瀛椾綋锛岀櫧鑹� -->
+    <style name="text_style_small_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13.0sp</item>
+    </style>
+
+    <!-- 灏忓彿瀛椾綋锛岃摑鑹� -->
+    <style name="text_style_small_blue">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">13.0sp</item>
+    </style>
+
+    <!-- 灏忓彿瀛椾綋锛岀伆鑹�-->
+    <style name="text_style_small_gary">
+        <item name="android:textColor">@color/font_gray</item>
+        <item name="android:textSize">13.0sp</item>
+    </style>
+
+
+
+    <!-- EditText 鏍峰紡 -->
+    <style name="edit_text_style_account">
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- 璁剧疆layout padding 10涓儚绱� -->
+    <style name="layout_padding_style">
+        <item name="android:padding">10dp</item>
+    </style>
+
+
+    <style name="fin_padding_radio_button" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/fee_selector</item>
+        <item name="android:paddingLeft">22dip</item>
+    </style>
+
+
+    <style name="dianyingpiao_progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="jtwz_orderItem_style" parent="@style/text_style_normal">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="main_tab_but_linear">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2.5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="more_popup_anim_style">
+        <item name="@android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="@android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+
+    <style name="translucent">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="calculator_item" parent="@style/shoudan_text_normal_white">
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">calculatorItemOnClick</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="label_edit_text_style">
+        <item name="@attr/labelTextSize">16.0sp</item>
+        <item name="@attr/labelTextColor">@color/black</item>
+        <item name="@attr/textColor">@color/black</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="shoudan_background">
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <style name="shoudan_common_btn_orange">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+        <item name="android:background">@drawable/selector_button_orange</item>
+    </style>
+
+
+
+    <style name="shoudan_text_medium_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="shoudan_text_normal_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="shoudan_text_small_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+    <style name="shoudan_text_big_black_main">
+        <item name="android:textColor">@color/trueblack</item>
+        <item name="android:textSize">@dimen/big_text_size</item>
+    </style>
+
+    <!-- 閫氱敤缁熶竴鐏拌壊瀛椾綋 -->
+    <style name="shoudan_text_small_gray">
+        <item name="android:textColor">@color/shoudan_gray</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+    <style name="shoudan_text_medium_gray">
+        <item name="android:textColor">@color/shoudan_gray</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+    <style name="shoudan_text_big_gray">
+        <item name="android:textColor">@color/shoudan_gray</item>
+        <item name="android:textSize">@dimen/big_text_size</item>
+    </style>
+
+    <style name="shoudan_text_small_orange">
+        <item name="android:textColor">@color/orange2</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+    <style name="shoudan_text_tiny_black">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="shoudan_text_common_yellow">
+        <item name="android:textColor">@color/light_yellow</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+
+    <style name="shoudan_text_small_blue">
+        <item name="android:textColor">@color/shoudan_blue</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="shoudan_text_small_green_blue">
+        <item name="android:textColor">@color/green_blue</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!--<style name="shoudan_text_small_gray">-->
+    <!--<item name="android:textColor">@color/shoudan_gray</item>-->
+    <!--<item name="android:textSize">14sp</item>-->
+    <!--</style>-->
+
+    <style name="signatrue_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:configChanges">orientation|keyboardHidden</item>
+    </style>
+
+    <style name="layout_jiaoyi_detail">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <!-- 璁＄畻鍣ㄦ暟瀛楅棿鐨勫垎鍓茬嚎 -->
+    <style name="sepeartor_calculate">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/cal_seperator</item>
+    </style>
+    <!-- 鎿嶄綔绗︿箣闂寸殑鍒嗗壊绾� 鐧借壊 -->
+    <style name="seperator_calculate_white">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="register_table_row">
+        <item name="android:minHeight">44dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="register_table_label_text">
+        <item name="android:textColor">@color/blue_main_color</item>
+        <item name="android:layout_gravity">center_vertical|left</item>
+
+    </style>
+
+    <style name="register_table_edittext">
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/transparence</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+
+    </style>
+
+ 	<!-- 鍓╀綑瀹归噺杩涘害鏉℃牱寮� -->
+	<style name="progressBar_mini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dp</item>
+        <item name="android:minHeight">8dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/progressbar_mini</item>
+    </style>
+    
+	<!-- 榛樿绐楀彛鏍峰紡 -->
+	<style name="default_dialog_style" parent="@android:Theme.Dialog">
+	    <item name="android:windowBackground">@drawable/bg_dialog</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+	<!-- 鏄剧ず鏁版嵁鐨凞ialog鏍峰紡 -->
+    <style name="content_dialog_style" parent="@style/default_dialog_style">
+	    <item name="android:windowBackground">@drawable/show_content_dialog_bg</item>
+    </style>
+	
+	<!-- 瀵嗙爜杈撳叆妗嗘牱寮� -->
+	<style name="enter_pwd_dialog" parent="@android:Theme.Dialog">
+	    <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+	<!-- 浜ゆ槗瀵嗙爜閿洏鏍峰紡 -->
+	<style name="keyboard_num">
+	    <item name="android:padding">10dp</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:textSize">20sp</item>
+	    <item name="android:textColor">@color/black</item>
+	    <item name="android:background">@drawable/key_pwd_selector</item>
+	</style>
+	
+	<!-- 瀵嗙爜杈撳叆鏍煎瓙鏍峰紡 -->
+	<style name="enter_pwd">
+	    <item name="android:gravity">center</item>
+	    <item name="android:textColor">@color/black</item>
+	    <item name="android:textSize">@dimen/pwd_text_size</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:focusable">false</item>
+	    <item name="android:inputType">textPassword</item>
+	    <item name="android:background">@color/num_key_bg_n</item>
+	</style>
+	
+	<!-- 涓摱閫氬湀瀛樹笟鍔″瓧浣撴牱寮� -->
+	<style name="quancun_business">
+	    <item name="android:drawablePadding">5dp</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:textColor">@color/text_blue_back_selector</item>
+	    <item name="android:textSize">18sp</item>
+	</style>
+	
+	<!-- 榛樿鐨勬寜閽牱寮� -->
+	<style name="default_button_style">
+	    <item name="android:padding">12dp</item>
+	    <item name="android:textColor">@color/white</item>
+	    <item name="android:textSize">@dimen/big_text_size</item>
+	</style>
+	
+	<!-- 姗樿壊鎸夐挳鏍峰紡 -->
+	<style name="orange_button_style" parent="@style/default_button_style">
+	    <item name="android:background">@drawable/btn_bg_color_orange_selector</item>
+	</style>
+	<!-- 钃濊壊鎸夐挳鏍峰紡 -->
+	<style name="blue_button_style" parent="@style/default_button_style">
+	    <item name="android:background">@drawable/btn_bg_color_blue_selector</item>
+	</style>
+	
+</resources>

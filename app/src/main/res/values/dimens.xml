@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+        <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="fivedip">5dip</dimen>
+    <dimen name="eightdip">8dip</dimen>
+    <dimen name="tendip">10dip</dimen>
+    <dimen name="thirtydip">30dip</dimen>
+    <dimen name="sixtyfivedip">65dip</dimen>
+    <dimen name="seventydip">70dip</dimen>
+    <dimen name="hundp">100dip</dimen>
+    <dimen name="twentydp">20dip</dimen>
+    <dimen name="list_item_text_size">12sp</dimen>
+    <dimen name="content_font">18sp</dimen>
+    <dimen name="title_font">19sp</dimen>
+
+    <dimen name="dialog_padding">25dp</dimen>
+    <dimen name="medium_text_size">15sp</dimen>
+    <dimen name="big_text_size">17sp</dimen>
+    <dimen name="big1_text_size">20sp</dimen>
+    <dimen name="small_text_size">13sp</dimen>
+
+    <!-- 閫氱敤缁熶竴鏂囧瓧澶у皬 
+    <dimen name="medium_text_size">15sp</dimen>
+    <dimen name="big_text_size">18sp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+-->
+    <dimen name="sixteen">16sp</dimen>
+    
+    <!-- 瀵嗙爜瀛椾綋澶у皬 -->
+    <dimen name="pwd_text_size">30sp</dimen>
+    <!-- 瀵嗙爜杈撳叆妗嗙殑澶у皬 -->
+    <dimen name="enter_pwd_size">40dp</dimen>
+</resources>

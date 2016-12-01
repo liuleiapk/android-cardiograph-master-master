@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg">#ffffcc</color>
+    <color name="whitegrey">#FFF2F2F2</color>
+    <color name="blue">#3366CC</color>
+    
+    <color name="keyboard_background">#1d1d1d</color>
+    <color name="blue1">#628ea4</color>  <!-- 蓝色 -->
+    <color name="blue4">#009EDA</color>
+    <color name="blue5">#0000EE</color>
+    <color name="blue_button_nor">#18A4DD</color>
+    <color name="gray_main2">#EFEFEF</color>
+    <color name="blue_main_color">#2792ED</color>
+    <color name="box">#cccccc</color><!-- 边框 ,list或之间的分割线 -->
+    <color name="selected">#E5E5E5</color>
+    <color name="orange">#FF8C00</color>
+    <color name="deeporange">#EE7621</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#090</color>
+    <color name="titlebar_blue">#00a2fd</color>
+    <color name="titlebar_blue_1">#17c2e7</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="trueblack">#000000</color> <!-- 黑色 -->
+    <color name="bg_color">#f0ece9</color>
+    <color name="bg_color_1">#f8f8f0</color>
+    <color name="transparent">#00000000</color>
+    <color name="line_color">#EEE9E9</color>
+    <color name="yellow">#dec674 </color><!-- 淡黄色 -->
+    <color name="gray">#f7f7f7</color> <!-- 灰色  一般为背景色 --><!-- #F6F6F6 -->
+    <color name="gray_1">#fafafa</color>
+	<color name="transparence">#00000000</color>
+	<color name="danlanse">#0099ff</color>
+	<color name="yellow2">#f8f9c0</color> <!-- 便利特惠淡黄色 -->
+	<color name="divide">#00A1E9</color>
+	<color name="font_gray">#8F8F8F</color> <!-- 灰色 -->
+	<color name="border">#f0f0f0</color>
+	<color name="border_lakala">#e0e0e0</color>
+	<color name="line">#e1e1e1</color>
+	<color name="transparent_background">#50000000</color> <!-- 透明色 -->
+	<color name="orange1">#FFAB22</color>
+    <color name="orange2">#FF8A00</color>
+    <color name="shoudan_blue">#ff5a9df6</color>
+    <color name="hint_blue">#086ec0</color>
+    <color name="shoudan_gray">#ff7b7c80</color>
+    <color name="shoudan_dark_blue">#ff04090f</color>
+    <color name="light_yellow">#FFFF00</color> <!-- 黄色 -->
+	
+	<!-- 关于我们  ，注册，忘记密码等深色字体 -->
+	<color name="about_us_blue">#0065FF</color>
+    <color name="green_blue">#18A4DD</color>
+    
+   <!--计算器灰色-->
+    <color name="cal_gray">#DEEBF2</color>
+    <color name="cal_seperator">#6B6966</color><!-- 计算器数字间的分割线 -->
+    <color name="deepgray">#DEDEDE</color>
+    
+    <!-- 密码输入键盘 -->
+    <color name="num_key_bg_n">#f5f5f5</color>
+    <color name="num_key_bg_p">#bdbdbd</color>
+    <color name="others_key_bg">#dedede</color>
+    <color name="keyboard_bg">#d6d6d6</color>
+    
+    <color name="title_blue">#46a5f2</color>
+    <color name="title_blue_light">#2893eb</color>
+    
+    <!--按钮高亮颜色-->
+    <color name="btn_blue_text">#00a8ff</color><!--蓝-->
+    
+        <!--按钮选中背景色-->
+    <color name="btn_white_selete_bg">#d9d9d9</color>
+    <color name="btn_blue_selete_bg">#008cd7</color>
+        <!--按钮边界颜色-->
+    <color name="btn_gray_border">#cacccd</color>
+    
+    <color name="sf_black_bg">#060606</color>
+    <color name="sf_green_wave">#2fb729</color>
+    <color name="sf_green_grid">#404040</color>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 组合左边TextView，右边EditText的布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    style="@style/combination_item_style"
+    android:orientation="horizontal"
+    android:paddingRight="10dp"
+    >
+
+    <TextView
+        android:id="@+id/id_combinatiion_text_edit_text"
+        style="@style/shoudan_text_medium_black"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/id_combination_text_edit_edit"
+        style="@style/shoudan_text_medium_black"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:background="@color/white" >
+
+    </EditText>
+
+</LinearLayout>

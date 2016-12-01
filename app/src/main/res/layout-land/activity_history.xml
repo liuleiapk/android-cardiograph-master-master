@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/history_background_land">
+    <TextView 
+        android:id="@+id/tvHisRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="@string/history_record"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+    <ImageView 
+        android:id="@+id/ivReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/history_back"/>
+    <TextView 
+        android:id="@+id/tvHisLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="@string/history_label"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/tvHisRecord"
+        android:layout_centerHorizontal="true"/>
+    <ListView 
+        android:id="@+id/lvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvHisLabel"
+        android:background="@drawable/history_shadow"
+        android:dividerHeight="2dp"
+        android:divider="#F5F5F5"
+        android:scrollbars="none">
+    </ListView>
+
+</RelativeLayout>

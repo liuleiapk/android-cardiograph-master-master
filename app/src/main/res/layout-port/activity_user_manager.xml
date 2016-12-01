@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background"
+    android:gravity="center_horizontal">
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_header"
+        android:layout_marginTop="15dp"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="@string/profile"/>
+    <ListView 
+        android:id="@+id/lvUserManager"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="#F5F5F5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:dividerHeight="0dp"
+        android:divider="#F5F5F5"
+        android:scrollbars="none">
+    </ListView>
+    <Button 
+        android:id="@+id/btnAddUser"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="@string/profile_add_user"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

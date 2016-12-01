@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/apk/res/com.example.cardiograph"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/app_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/common_navigation_bar" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp" 
+        android:layout_marginTop="20dp">
+
+        <View style="@style/seperator" />
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <include
+          		android:id="@+id/id_include1_code"
+          	    layout="@layout/combination_text_edit" />
+        </LinearLayout>
+        
+        <View style="@style/seperator" />
+
+        <include
+            android:id="@+id/id_include2_password"
+            layout="@layout/combination_text_edit" />
+
+        <View style="@style/seperator" />
+
+        <include
+            android:id="@+id/id_include3_confirm_password"
+            layout="@layout/combination_text_edit" />
+        
+        <View style="@style/seperator" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/update_password_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/register_tips"
+        android:textColor="@color/red"
+        android:textSize="15sp" />
+    
+    <com.cardiograph.component.BtnWithTopLine
+        android:id="@+id/register"
+        style="@style/btn_top_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        apps:btn_text="@string/register" />
+
+</LinearLayout>
